@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const blogSchema = new mongoose.Schema({
+const blogSchema = new mongoose.Schema(
+    {
     title:{
         type:String,
         requires:[true,"title is required"],
@@ -13,6 +14,11 @@ const blogSchema = new mongoose.Schema({
         type:String,
         requires:[true,"image is required"],
     },
+    user:{
+        type:mongoose.Types.ObjectId,
+        ref:"User",
+        required:[true,"user id is required"],
+    }
 },
 {timestamps:true}
 );
