@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
+
 const CreateBlog = () => {
     const id = localStorage.getItem(`userId`)
     const navigate=useNavigate();
@@ -40,7 +41,7 @@ const CreateBlog = () => {
     <>
        <form onSubmit={handleSubmit}>
         <Box
-          width={"60%"}
+          width={"40%"}
           border={2}
           borderRadius={5}
           padding={3}

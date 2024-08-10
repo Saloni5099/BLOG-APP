@@ -10,7 +10,7 @@ import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { Box, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-
+import toast from "react-hot-toast";
 import axios from "axios";
 
 export default function BlogCard({
@@ -51,7 +51,7 @@ export default function BlogCard({
         },
       }}
     >
-      {/* {isUser && (
+      {isUser && (
         <Box display={"flex"}>
           <IconButton onClick={handleEdit} sx={{ marginLeft: "auto" }}>
             <ModeEditIcon color="info" />
@@ -60,7 +60,7 @@ export default function BlogCard({
             <DeleteIcon color="error" />
           </IconButton>
         </Box>
-      )} */}
+      )}
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -70,7 +70,7 @@ export default function BlogCard({
         title={username}
         subheader={time}
       />
-      <CardMedia component="img" height="194" image={image} alt="Paella dish" />
+      <CardMedia component="img" height="194" image={image} alt="Blog" />
       <CardContent>
         <Typography variant="h6" color="text.secondary">
           Title : {title}

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client":"npm start --prefix ./client",
+    "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
@@ -23,6 +23,7 @@
     "mongoose": "^8.5.2",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
+    "react-hot-toast": "^2.4.1",
     "react-redux": "^9.1.2"
   }
 }
