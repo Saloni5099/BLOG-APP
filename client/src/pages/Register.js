@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import axios from "axios";
+import { green } from "@mui/material/colors";
 const Register = () => {
   const navigate = useNavigate();
   //state
@@ -39,7 +40,7 @@ const Register = () => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <Box
           maxWidth={450}
           display="flex"
@@ -48,15 +49,17 @@ const Register = () => {
           justifyContent={"center"}
           margin="auto"
           marginTop={5}
-          boxShadow="10px 10px 20px #ccc"
+          boxShadow="10px 10px 20px "
           padding={3}
           borderRadius={5}
+          bgcolor= "white"
         >
           <Typography
             variant="h4"
             sx={{ textTransform: "uppercase" }}
             padding={3}
             textAlign="center"
+            color="black"
           >
             Register
           </Typography>

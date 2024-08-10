@@ -50,13 +50,14 @@ const CreateBlog = () => {
           display="flex"
           flexDirection={"column"}
           marginTop="30px"
+          bgcolor={"white"}
         >
          <Typography 
           variant="h2"
           textAlign={"center"}
           fontStyle="bold"
           padding={3}
-          color="gray"
+          color="black"
          >Create a post</Typography>
          <InputLabel 
           sx={{mb:1,mt:2,fontSize:"24px",fontWeight:"bold"}}>
